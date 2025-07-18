@@ -1,86 +1,87 @@
-# FUTURE_DS_01
-Business Sales Analysis from E-commerce Data
-# 🛒 Superstore Sales Analysis & Dashboard
+# Superstore Sales Analysis & Power BI Dashboard
 
-## 📌 Project Overview
-This notebook analyzes sales data from a fictional Superstore to uncover trends, evaluate performance by category and customer segment, and build an interactive Power BI dashboard for business decision-making.
+## Overview
 
----
-
-## ✅ Objectives
-- Clean and organize raw sales data (Excel/CSV format)
-- Analyze patterns such as:
-  - Monthly sales trends
-  - Category-wise performance
-  - Customer behavior and segmentation
-- Build a visually engaging Power BI dashboard with filters and charts
-- Present insights and recommendations as if advising a real business
+This project explores Superstore sales data with the goal of identifying actionable insights for business decision-making. I cleaned and analyzed the raw sales dataset (Excel format), visualized trends, and built an interactive Power BI dashboard for reporting.
 
 ---
 
-## 📁 Data Description
-- **Source**: `superstore.xls`
-- **Fields include**: Order Date, Region, Category, Sales, Profit, Quantity, Customer Segment, etc.
+## Objectives
+
+- Clean and organize raw Superstore data (Excel)
+- Identify key patterns in sales, profit, product performance, and customer behavior
+- Visualize monthly and category-wise trends
+- Create an interactive Power BI dashboard with filters and slicers
+- Provide clear, business-friendly insights and recommendations
 
 ---
 
-## 🧼 Step 1: Data Cleaning
-- Converted date columns to datetime format
-- Removed duplicates and irrelevant columns
-- Handled missing values (if any)
-- Trimmed whitespace and standardized naming
-- Created time-based columns (Year, Month)
+## Data Cleaning
 
-Tools: `pandas`, `numpy`
+- Removed missing and duplicate records
+- Converted `Order Date` and `Ship Date` to datetime
+- Extracted useful features like **Month**, **Year**, and **Region**
+- Verified data types and column formats for Power BI compatibility
 
 ---
 
-## 📊 Step 2: Exploratory Data Analysis (EDA)
+## Exploratory Analysis
 
-### 🗓️ Monthly Sales Trends
-- Clear seasonality with Q4 sales peaks
-- Sales drop around mid-year months (May–July)
-
-### 🧱 Category & Sub-Category Performance
-- **Technology** leads in revenue
-- **Office Supplies** has the highest quantity sold
-- High profit margin observed in **Phones** and **Chairs**
-
-### 🧍 Customer Behavior
-- Segment-wise profit varies: Corporate and Home Office segments are more profitable than Consumer
-- Regionally, **West** dominates in revenue, while **South** shows lower average order value
+- **Best-Selling Products**: Based on total profit
+- **Most-Selling Products**: Based on quantity sold
+- **Monthly Sales Trends**: Identified seasonal spikes
+- **Category & Sub-Category Performance**: Tracked sales and profits
+- **Regional Analysis**: Compared performance across regions
+- **Customer Segments**: Analyzed profitability by segment
 
 ---
 
-## 📈 Step 3: Power BI Dashboard
-Created a dynamic Power BI dashboard with:
-- Filters: Region, Category, Segment, Date Range
-- Visuals:
-  - Monthly sales trend (line chart)
-  - Profit by Region (bar/map)
-  - Sub-category performance (stacked column)
-  - Customer segmentation (tree map / pie chart)
+## Power BI Dashboard
+
+The final dashboard includes:
+
+- Filters (slicers) for **Year**, **Region**, **Category**, and **Segment**
+- **Monthly Sales Trend** line chart
+- **Top 10 Products by Sales & Profit**
+- **Sales by Region** map
+- **Category Performance** bar charts
+- **Customer Segments** pie chart
 
 ---
 
-## 💡 Step 4: Insights & Recommendations
-- Focus marketing in **Q4** to capitalize on seasonal demand
-- Upsell in **Furniture** category to improve low profits
-- Launch loyalty programs to retain **mid-tier** customers
-- Boost sales in **South and Central** regions with geo-targeted offers
+## Business Insights
+
+- **Staples** and **Technology** generate high volume but differ in profitability
+- **West and East** regions dominate sales, but **South** underperforms
+- **Home Office** segment shows strong profit margins—good for upselling
+- Not all high-selling products are highly profitable → focus on optimizing both
 
 ---
 
-## 🛠️ Tools Used
-- **Data Cleaning & Analysis**: Excel, VS Code, Python (`pandas`, `matplotlib`)
-- **Dashboard**: Power BI
-- **Visualization**: Charts, slicers, maps, and drill-downs
+## Recommendations
+
+- Promote **high-profit items** over just high-quantity items
+- Investigate **low-performing regions** and adjust marketing/supply strategy
+- Prepare for **monthly sales peaks** with inventory and logistics planning
+- Target **profitable customer segments** (e.g., Home Office) for retention
 
 ---
 
-## 📬 Contact
+## Tools Used
+
+- Microsoft Excel (raw data source)
+- Python (pandas, matplotlib, seaborn) for preliminary analysis
+- Power BI for interactive visualization and dashboard building
+
+---
+
+## Future Enhancements
+
+- Add time-series forecasting for sales
+- Include shipping cost analysis for logistics planning
+- Automate data refresh in Power BI with connected Excel or SQL source
+
+## Contact
 **Kevin Karanja**  
 kevinjogu95@gmail.com  
 [https://www.linkedin.com/in/kevin-karanja-njogu/]
-
-
